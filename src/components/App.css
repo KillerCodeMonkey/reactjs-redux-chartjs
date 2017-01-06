@@ -22,3 +22,33 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+nav {
+  margin: 20px;
+}
+
+nav a {
+  margin: 5px;
+  padding: 3px;
+  text-decoration: none;
+  border: 1px dashed #2b2b2b;
+  color: #000;
+}
+
+nav a.active {
+  font-weight: bold;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #2b2b2b;
+}
+
+nav a:visted {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+}

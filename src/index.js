@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore } from 'redux';
-import { Provider } from 'react-redux'
 
-import App from './components/App';
-import reducer from './reducers';
+import { createStore } from 'redux';
+
+import Root from './components/Root';
 import './index.css';
+
+import reducer from './reducers';
 
 const store = createStore(reducer, {
   costs: [15000, 15000, 15000],
@@ -14,8 +15,6 @@ const store = createStore(reducer, {
 });
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <Root store={ store } />,
   document.getElementById('root')
 );
