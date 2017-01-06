@@ -2,6 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 It is using [Chart.JS](http://www.chartjs.org), [React.JS](https://facebook.github.io/react/) and [React-Redux](https://github.com/reactjs/react-redux).
 
+Check out the "beautiful" demo page (^^): [Demo-Page](https://killercodemonkey.github.io/reactjs-redux-chartjs)
+
 ## Available Scripts
 
 In the project directory, you can run:

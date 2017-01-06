@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 
-import { Router, Route, Redirect, IndexRoute, browserHistory } from 'react-router';
+import { Router, Route, Redirect, IndexRoute, hashHistory } from 'react-router';
 import { Provider } from 'react-redux';
 
 import App from './App';
@@ -10,7 +10,7 @@ import About from './About';
 
 const Root = ({ store }) => (
   <Provider store={store}>
-    <Router history={browserHistory}>
+    <Router history={hashHistory}>
       <Route path="/" component={App}>
         <IndexRoute component={Home} />
         <Route path="about/(:aParam)" component={About} />
